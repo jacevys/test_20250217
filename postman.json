@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "cf80891d-d621-447b-b751-0cc3b420af0c",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38273896"
+	},
+	"item": [
+		{
+			"name": "bitcion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{url}}/v1/get_label?chain_name=bitcoin&address=34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo&source_list_code=100&search_flag=false&quick_mode=false",
+					"protocol": "http",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"v1",
+						"get_label"
+					],
+					"query": [
+						{
+							"key": "chain_name",
+							"value": "bitcoin"
+						},
+						{
+							"key": "address",
+							"value": "34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo"
+						},
+						{
+							"key": "source_list_code",
+							"value": "100"
+						},
+						{
+							"key": "search_flag",
+							"value": "false"
+						},
+						{
+							"key": "quick_mode",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tron",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.200.130:7001/v1/get_label?chain_name=tron&address=TMuA6YqfCeX8EhbfYEg5y7S4DqzSJireY9&source_list_code=100&search_flag=false&quick_mode=false",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"200",
+						"130"
+					],
+					"port": "7001",
+					"path": [
+						"v1",
+						"get_label"
+					],
+					"query": [
+						{
+							"key": "chain_name",
+							"value": "tron"
+						},
+						{
+							"key": "address",
+							"value": "TMuA6YqfCeX8EhbfYEg5y7S4DqzSJireY9"
+						},
+						{
+							"key": "source_list_code",
+							"value": "100"
+						},
+						{
+							"key": "search_flag",
+							"value": "false"
+						},
+						{
+							"key": "quick_mode",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "btc_post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.200.195:8002/btc/etl/parse?block=1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"200",
+						"195"
+					],
+					"port": "8002",
+					"path": [
+						"btc",
+						"etl",
+						"parse"
+					],
+					"query": [
+						{
+							"key": "block",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "192.168.200.130:7001",
+			"type": "default"
+		},
+		{
+			"key": "url_2",
+			"value": "192.168.200.195:8002",
+			"type": "string"
+		}
+	]
+}

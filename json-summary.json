@@ -1,0 +1,92 @@
+{
+  "bitcion": {
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "max": 644.88,
+        "p(90)": 644.88,
+        "p(95)": 644.88,
+        "avg": 644.88,
+        "min": 644.88,
+        "med": 644.88
+      }
+    },
+    "http_req_failed": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 0,
+        "rate": 0
+      }
+    },
+    "http_reqs": {
+      "values": {
+        "count": 1,
+        "rate": 0.2311261784834933
+      },
+      "type": "counter",
+      "contains": "default"
+    }
+  },
+  "tron": {
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "p(90)": 583.56,
+        "p(95)": 583.56,
+        "avg": 583.56,
+        "min": 583.56,
+        "med": 583.56,
+        "max": 583.56
+      }
+    },
+    "http_req_failed": {
+      "contains": "default",
+      "values": {
+        "count": 0,
+        "rate": 0
+      },
+      "type": "counter"
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 1,
+        "rate": 0.2311261784834933
+      }
+    }
+  },
+  "btc_post": {
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "default",
+      "values": {
+        "p(90)": 72.437,
+        "p(95)": 72.437,
+        "avg": 72.437,
+        "min": 72.437,
+        "med": 72.437,
+        "max": 72.437
+      }
+    },
+    "http_req_failed": {
+      "contains": "default",
+      "values": {
+        "count": 0,
+        "rate": 0
+      },
+      "type": "counter"
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 1,
+        "rate": 0.2311261784834933
+      }
+    }
+  }
+}

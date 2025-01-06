@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  k6:
+    image: grafana/k6:latest
+    platform: linux/amd64
+    container_name: k6_test
+    volumes:
+      - .:/StressAbility  # 正確掛載本地目錄到容器內
+    command: ["run", "/StressAbility/tests/api_test.js"]  # 指定容器內的腳本路徑
+    environment:
+      - API_URL=http://api.example.com
+    networks:
+      - k6_network
+
+networks:
+  k6_network:
+    driver: bridge
