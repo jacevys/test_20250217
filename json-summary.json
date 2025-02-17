@@ -1,32 +1,32 @@
 {
   "bitcion": {
     "http_req_duration": {
-      "type": "trend",
       "contains": "default",
       "values": {
-        "max": 644.88,
-        "p(90)": 644.88,
-        "p(95)": 644.88,
-        "avg": 644.88,
-        "min": 644.88,
-        "med": 644.88
-      }
+        "med": 850.99,
+        "max": 850.99,
+        "p(90)": 850.99,
+        "p(95)": 850.99,
+        "avg": 850.99,
+        "min": 850.99
+      },
+      "type": "trend"
     },
     "http_req_failed": {
-      "type": "counter",
       "contains": "default",
       "values": {
         "count": 0,
         "rate": 0
-      }
+      },
+      "type": "counter"
     },
     "http_reqs": {
-      "values": {
-        "count": 1,
-        "rate": 0.2311261784834933
-      },
       "type": "counter",
-      "contains": "default"
+      "contains": "default",
+      "values": {
+        "rate": 0.19347370624616317,
+        "count": 1
+      }
     }
   },
   "tron": {
@@ -34,58 +34,58 @@
       "type": "trend",
       "contains": "default",
       "values": {
-        "p(90)": 583.56,
-        "p(95)": 583.56,
-        "avg": 583.56,
-        "min": 583.56,
-        "med": 583.56,
-        "max": 583.56
+        "p(95)": 761.372,
+        "avg": 761.372,
+        "min": 761.372,
+        "med": 761.372,
+        "max": 761.372,
+        "p(90)": 761.372
       }
     },
     "http_req_failed": {
-      "contains": "default",
       "values": {
         "count": 0,
         "rate": 0
       },
-      "type": "counter"
+      "type": "counter",
+      "contains": "default"
     },
     "http_reqs": {
       "type": "counter",
       "contains": "default",
       "values": {
         "count": 1,
-        "rate": 0.2311261784834933
+        "rate": 0.19347370624616317
       }
     }
   },
   "btc_post": {
     "http_req_duration": {
-      "type": "trend",
-      "contains": "default",
       "values": {
-        "p(90)": 72.437,
-        "p(95)": 72.437,
-        "avg": 72.437,
-        "min": 72.437,
-        "med": 72.437,
-        "max": 72.437
-      }
+        "p(90)": 514.226,
+        "p(95)": 514.226,
+        "avg": 514.226,
+        "min": 514.226,
+        "med": 514.226,
+        "max": 514.226
+      },
+      "type": "trend",
+      "contains": "default"
     },
     "http_req_failed": {
+      "type": "counter",
       "contains": "default",
       "values": {
-        "count": 0,
-        "rate": 0
-      },
-      "type": "counter"
+        "count": 1,
+        "rate": 0.19347370624616317
+      }
     },
     "http_reqs": {
       "type": "counter",
       "contains": "default",
       "values": {
         "count": 1,
-        "rate": 0.2311261784834933
+        "rate": 0.19347370624616317
       }
     }
   }
